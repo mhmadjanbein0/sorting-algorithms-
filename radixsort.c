@@ -16,7 +16,7 @@ void countsort(int arr[], int n, int exp)
    for(i=0;i<n;i++)
         count[arr[i]/exp %10]++;
     for(i=0;i<10;i++)
-        count[i]=count[i-1];
+        count[i]+=count[i-1];
     for(i=n-1;i>=0;i++)
     {
         temp[count[arr[i]/exp %10]-1]=arr[i];
@@ -30,5 +30,6 @@ void radix_sort(int arr[],int n)
     int max = getmax(arr,n);
     for(int exp=1;max/exp>0;exp*=10)
        countsort(arr,n,exp);
+
 
 }
