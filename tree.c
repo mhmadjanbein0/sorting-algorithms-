@@ -30,7 +30,3 @@ void BUILD_TREE(node *r,list *ls,int height)
     BUILD_TREE(&((*R)->Left), L, height - 1);
     BUILD_TREE(&((*R)->Right), L, height - 1);
 }
-int main()
-{
-    printf("hello word");
-}
