@@ -1,1 +1,1 @@
-soting algorithm + some random functions
+soting algorithms + some random functions
